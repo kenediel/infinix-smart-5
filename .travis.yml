@@ -73,16 +73,3 @@ branches:
   except:
     - /^(?i:untagged)-.*$/
     - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
-13. Fire-Up The Build
-When you save the .travis.yml file for the first time, the build will automatically start.
-You can see the progress of the build on https://travis-ci.com/${_USERNAME_}/${_REPO_SLUG_}/
-After the first build, you can see the result on the GitHub Repository's Releases Page at https://github.com/${_USERNAME_}/${_REPO_SLUG_}/releases/
-14. Flash and Enjoy
-Flash the newly-build Recovery. It is better Not to Use with Stock ROM.
-15. Troubleshooting Recovery Boot
-If The Recovery does not Boot,
- Unpack the Stock Recovery Image again, and double-check properties used in TWRP Tree
- Double-check files that are included in the Tree
-If the Recovery starts Upside-Down,
- Edit BoardConfig.mk and insert the below line before the include part (last line)
-BOARD_HAS_FLIPPED_SCREEN := true
